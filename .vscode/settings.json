@@ -1,0 +1,16 @@
+{
+    "liveSassCompile.settings.formats": [{
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/css"
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "html.format.wrapLineLength": 200,
+    "html.format.wrapAttributes": "preserve-aligned"
+}

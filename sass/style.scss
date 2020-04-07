@@ -1,0 +1,301 @@
+    // @import url(reset.css);
+
+    $mainColor: #f87c1e;
+    $mainColor2: #f87c1e;
+
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 15px;
+        line-height: 1.6em;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        outline-color: -moz-use-text-color;
+        outline-style: none;
+        outline-width: medium;
+        text-decoration-color: -moz-use-text-color;
+        text-decoration-line: none;
+        text-decoration-style: solid;
+        transition: 0.3s;
+        outline: none;
+        /* for Firefox Google Chrome  */
+
+        &:hover {
+            text-decoration: none;
+        }
+
+
+        &.scrollup {
+            width: 40px;
+            height: 40px;
+            opacity: 1;
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+            background-color: rgba(255, 255, 255, .9);
+            border-radius: 50%;
+            text-align: center;
+            color: $mainColor;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    .img-responsive {
+        height: auto;
+        margin: 0 auto;
+
+        &.fleet {
+            padding: 1em 0;
+        }
+    }
+
+    header {
+        background-color: white;
+
+        .navbar {
+            border: 0px solid transparent;
+            border-top: 5px solid $mainColor;
+            background-color: #ffffff;
+            border-radius: 0px;
+            padding: 15px 0 15px 0;
+            margin: 0px;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .navbar-brand {
+            padding: 0px;
+            margin: 0px !important;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .navbar-nav {
+            li {
+                a {
+                    font-weight: 400;
+                    padding-top: 20px;
+                }
+
+                &.active {
+                    a {
+                        background-color: transparent !important;
+                        color: $mainColor !important;
+                    }
+                }
+            }
+        }
+
+        .navBox {
+            .navbar {}
+
+            .navbar-collapse {
+                padding: 0px;
+                max-height: 100%;
+                border-color: transparent;
+
+                .navbar-nav {
+                    float: none;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        float: none;
+
+                        a {
+                            padding: 1em 10px;
+                            font-size: 15px;
+                            color: #000;
+                            font-weight: normal !important;
+
+                            &.active {
+                                color: $mainColor !important;
+                            }
+
+                            &:hover {
+                                color: $mainColor !important;
+                            }
+                        }
+
+                        &.dropdown {
+                            .dropdown-menu {
+                                padding: 0 0 !important;
+                                margin: 0px;
+                                border: 0px;
+
+                                li {
+                                    width: 100%;
+
+                                    a {
+                                        color: #ffffff;
+                                        text-align: center;
+                                        font-weight: normal;
+                                        background-color: #ed1c24;
+                                        padding: 10px 10px !important;
+                                        font-size: 15px;
+
+                                        &:hover {
+                                            background-color: #ff6066;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        margin: 85px 0 0 0;
+
+        .water {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../images/islands_01.jpg);
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .water2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../images/islands_12.jpg);
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .turtle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            pointer-events: none;
+        }
+
+        .house {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .notice {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .contact {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+    }
+
+    footer {}
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 950px !important;
+            padding: 0px !important;
+        }
+    }
+
+    @media (max-width: 992px) {}
+
+    @media (max-width: 767px) {
+
+        header {
+            .navbar-header {
+                .logo {
+                    padding: 1em;
+                }
+            }
+
+            .navbar-brand {
+                padding: 0px;
+                margin: 0 0 0 15px !important;
+            }
+
+            .navbar-nav {
+                margin: 0px !important;
+                text-align: center;
+                display: block !important;
+            }
+
+            .navbar-default .navbar-toggle {
+                border-color: transparent;
+                background-color: transparent !important;
+                margin-top: 0;
+                margin-bottom: 0;
+
+                .icon-bar {
+                    background-color: $mainColor;
+                    width: 30px;
+                    height: 5px;
+                }
+
+                &:hover {
+                    background-color: transparent !important;
+                }
+            }
+
+            .navBox {
+                .navbar-collapse {
+                    padding: 0px;
+
+                    .navbar-nav {
+                        float: none;
+                        text-align: left;
+                        margin-top: 1.5em !important;
+
+                        li {
+                            a {
+                                padding: .5em 0;
+                                font-size: 18px;
+                                font-weight: bold;
+                                text-align: center;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .container {
+                padding: 0px !important;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        footer {
+            .footer-content {
+                display: block;
+            }
+
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 460px) {}
