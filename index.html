@@ -23,8 +23,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <link rel="stylesheet" href="plugins/lightbox/dist/css/lightbox.min.css">
 
 </head>
 
@@ -149,5 +147,12 @@
 <script src="js/jquery.ripples.js"></script>
 <!-- common -->
 <script src="js/common.js"></script>
+<script>
+  $('.water,.water2').ripples({
+    resolution: 256,
+    dropRadius: 20,
+    perturbance: 0.04,
+  });
+</script>
 
 </html>

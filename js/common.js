@@ -4,8 +4,7 @@ $(document).ready(function () {
     $(this).blur();
   });
 
-  $('a.smoothScroll').smoothScroll({
-  });
+  $('a.smoothScroll').smoothScroll({});
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -24,7 +23,7 @@ $(document).ready(function () {
 
   //指定畫面滑動
 
-  
+
   $('.link-1').click(function () {
     $('html,body').animate({
       scrollTop: $('#contentBox-1').offset().top
@@ -56,9 +55,4 @@ $(document).ready(function () {
     }, 800);
   });
 
-  $('.water,.water2').ripples({
-    resolution: 256,
-    dropRadius: 20,
-    perturbance: 0.04,
-  });
 });
