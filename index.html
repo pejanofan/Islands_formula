@@ -148,10 +148,12 @@
 <!-- common -->
 <script src="js/common.js"></script>
 <script>
-  $('.water,.water2').ripples({
-    resolution: 256,
-    dropRadius: 20,
-    perturbance: 0.04,
+  $(window).load(function () {
+    $('.water,.water2').ripples({
+      resolution: 256,
+      dropRadius: 20,
+      perturbance: 0.04,
+    });
   });
 </script>
 
